@@ -394,15 +394,13 @@ h2{
 
 font-family:Georgia,serif;
 
-
 font-size:clamp(45px,6vw,80px);
-
 
 font-weight:400;
 
+line-height:1.05;
 
-line-height:1;
-
+letter-spacing:-1px;
 
 }
 
