@@ -1,302 +1,403 @@
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
+
 
 html{
-    scroll-behavior:smooth;
+scroll-behavior:smooth;
 }
 
+
 body{
-    background:#F4EFE6;
-    color:#22251F;
-    font-family:Arial, Helvetica, sans-serif;
+background:#f7f0e5;
+color:#1d241b;
+font-family:Arial, sans-serif;
 }
+
 
 
 /* HEADER */
 
+
 header{
-    position:fixed;
-    top:0;
-    width:100%;
-    padding:30px 60px;
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+position:fixed;
+top:0;
 
-    z-index:10;
+width:100%;
+
+padding:35px 70px;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+z-index:10;
+
 }
+
+
 
 .logo{
-    font-family:Georgia, serif;
-    font-size:24px;
-    letter-spacing:5px;
+
+font-family:Georgia,serif;
+letter-spacing:5px;
+font-size:22px;
+
 }
 
+
+.logo span{
+
+display:block;
+font-family:Arial;
+font-size:10px;
+letter-spacing:3px;
+margin-top:8px;
+
+}
+
+
 nav a{
-    color:#22251F;
-    text-decoration:none;
-    margin-left:35px;
-    font-size:13px;
-    letter-spacing:2px;
-    text-transform:uppercase;
+
+margin-left:35px;
+text-decoration:none;
+
+color:#1d241b;
+
+font-size:12px;
+letter-spacing:2px;
+
 }
 
 
 
 /* HERO */
 
+
 .hero{
-    height:100vh;
 
-    background:
-    linear-gradient(
-        rgba(244,239,230,.25),
-        rgba(244,239,230,.55)
-    ),
-    url("assets/hero.jpg");
+height:100vh;
 
-    background-size:cover;
-    background-position:center;
+background:
+linear-gradient(
+90deg,
+rgba(247,240,229,.8),
+rgba(247,240,229,.15)
+),
+url("assets/hero.png");
 
-    display:flex;
-    align-items:center;
 
-    padding:80px;
+background-size:cover;
+background-position:center;
+
+display:flex;
+align-items:center;
+
+padding:80px;
+
 }
 
 
-.hero-text p{
-    letter-spacing:4px;
-    text-transform:uppercase;
-    margin-bottom:25px;
+.hero p{
+
+letter-spacing:5px;
+
 }
 
 
 .hero h1{
-    font-family:Georgia, serif;
-    font-size:95px;
-    line-height:.95;
-    font-weight:400;
 
-    max-width:800px;
+font-family:Georgia,serif;
+
+font-size:90px;
+font-weight:400;
+
+line-height:.95;
+
+margin:30px 0;
+
 }
 
 
-.hero span{
-    display:block;
-    margin-top:35px;
+.hero h3{
 
-    font-size:18px;
-    max-width:380px;
-    line-height:1.6;
+font-weight:400;
+
+font-size:22px;
+
 }
+
+
 
 
 
 /* STORY */
 
-.story{
-    padding:160px 15%;
-}
 
+.story,
+.size{
 
-.story h2{
-    font-family:Georgia, serif;
-    font-size:60px;
-    font-weight:400;
+display:grid;
 
-    margin-bottom:50px;
-}
+grid-template-columns:1fr 1fr;
 
+gap:80px;
 
-.story p{
-    font-size:22px;
-    line-height:1.8;
+align-items:center;
 
-    max-width:850px;
+padding:150px 10%;
+
 }
 
 
 
-/* PRODUCT */
+.story img,
+.size img{
 
-.product{
-    height:90vh;
+width:100%;
 
-    background:#283225;
-    color:#F4EFE6;
-
-    display:flex;
-    align-items:center;
-
-    padding:15%;
 }
 
 
-.product h2{
-    font-family:Georgia, serif;
-    font-size:80px;
-    font-weight:400;
+h2{
+
+font-family:Georgia,serif;
+
+font-size:60px;
+
+font-weight:400;
+
 }
 
 
-.product p{
-    margin-top:40px;
-    font-size:22px;
-    line-height:1.7;
+p{
 
-    max-width:500px;
+font-size:19px;
+
+line-height:1.8;
+
+margin-top:40px;
+
 }
 
 
 
-/* CAMPAIGN */
-
-.campaign{
-
-    height:100vh;
-
-    background:
-    linear-gradient(
-        rgba(0,0,0,.2),
-        rgba(0,0,0,.35)
-    ),
-    url("assets/palm01.jpg");
-
-    background-size:cover;
-    background-position:center;
 
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+/* SIZE */
 
-    text-align:center;
 
-    color:white;
+.stats{
+
+display:flex;
+
+gap:60px;
+
+margin-top:50px;
+
+}
+
+
+
+.stats h1{
+
+font-family:Georgia;
+
+font-size:60px;
+
+font-weight:400;
+
 }
 
 
-.campaign h1{
 
-    font-family:Georgia, serif;
-    font-size:90px;
-    font-weight:400;
+
+
+/* STATEMENT */
+
+
+.statement{
+
+height:80vh;
+
+background:
+
+linear-gradient(
+rgba(0,0,0,.25),
+rgba(0,0,0,.25)
+),
+
+url("assets/palm01.png");
+
+
+background-size:cover;
+
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+
+color:white;
+
+text-align:center;
+
 
 }
+
+
+
+.statement h1{
+
+font-family:Georgia;
+
+font-size:80px;
+
+font-weight:400;
+
+}
+
+
+
 
 
 
 /* CARE */
 
+
 .care{
 
-    padding:140px 10%;
+padding:150px 10%;
 
 }
 
-
-.care h2{
-
-    font-family:Georgia, serif;
-    font-size:60px;
-    font-weight:400;
-
-    margin-bottom:70px;
-
-}
 
 
 .care-grid{
 
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:40px;
+margin-top:80px;
+
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:40px;
+
 
 }
+
 
 
 .care-grid div{
 
-    border-top:1px solid #222;
+border-top:1px solid #222;
 
-    padding-top:30px;
-
-}
-
-
-.care-grid h3{
-
-    margin:20px 0;
-
-    font-size:24px;
-
-}
-
-
-.care-grid p{
-
-    line-height:1.7;
+padding-top:30px;
 
 }
 
 
 
-/* FOOTER */
+.care span{
+
+font-family:Georgia;
+
+font-size:30px;
+
+}
+
+
+
+.care h3{
+
+margin:30px 0;
+
+font-size:26px;
+
+}
+
+
+
+
+
 
 footer{
 
-    padding:40px;
+padding:50px;
 
-    text-align:center;
+text-align:center;
 
-    font-size:12px;
+letter-spacing:4px;
 
-    letter-spacing:3px;
+font-size:12px;
 
 }
 
 
 
-/* MOBILE */
+
 
 @media(max-width:800px){
 
+
 header{
-    padding:25px;
+
+padding:25px;
+
 }
+
 
 nav{
-    display:none;
+
+display:none;
+
 }
+
 
 .hero{
-    padding:30px;
+
+padding:30px;
+
 }
+
 
 .hero h1{
-    font-size:55px;
+
+font-size:55px;
+
 }
+
 
 .story,
-.product,
-.care{
-    padding:100px 30px;
-}
-
-.story h2,
-.product h2,
-.care h2,
-.campaign h1{
-    font-size:45px;
-}
-
+.size,
 .care-grid{
-    grid-template-columns:1fr;
+
+grid-template-columns:1fr;
+
 }
+
+
+.story,
+.size,
+.care{
+
+padding:90px 30px;
+
+}
+
+
+h2,
+.statement h1{
+
+font-size:45px;
+
+}
+
 
 }
