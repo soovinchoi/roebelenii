@@ -1,3 +1,9 @@
+/* =====================
+ROEBELENII
+California Palm House
+===================== */
+
+
 *{
 margin:0;
 padding:0;
@@ -11,10 +17,31 @@ scroll-behavior:smooth;
 
 
 body{
-background:#f7f0e5;
-color:#1d241b;
-font-family:Arial, sans-serif;
+
+background:#F7F0E4;
+
+color:#243324;
+
+font-family:"Helvetica Neue", Arial, sans-serif;
+
+overflow-x:hidden;
+
 }
+
+
+
+/* COLORS
+
+Cream: #F7F0E4
+Palm Green: #243324
+Sage: #89976E
+Terracotta: #C77745
+Sun Gold: #DFAE4F
+Sand: #D8BE92
+
+*/
+
+
 
 
 
@@ -24,17 +51,29 @@ font-family:Arial, sans-serif;
 header{
 
 position:fixed;
+
 top:0;
+left:0;
 
 width:100%;
 
-padding:35px 70px;
+padding:28px 7%;
 
 display:flex;
+
 justify-content:space-between;
+
 align-items:center;
 
-z-index:10;
+
+background:
+rgba(247,240,228,.85);
+
+
+backdrop-filter:blur(15px);
+
+
+z-index:100;
 
 }
 
@@ -43,34 +82,63 @@ z-index:10;
 .logo{
 
 font-family:Georgia,serif;
-letter-spacing:5px;
-font-size:22px;
+
+font-size:23px;
+
+letter-spacing:6px;
+
+color:#1F3A27;
 
 }
+
 
 
 .logo span{
 
 display:block;
+
 font-family:Arial;
-font-size:10px;
+
+font-size:9px;
+
 letter-spacing:3px;
+
 margin-top:8px;
 
+
+color:#C77745;
+
 }
+
 
 
 nav a{
 
 margin-left:35px;
+
 text-decoration:none;
 
-color:#1d241b;
-
 font-size:12px;
+
 letter-spacing:2px;
 
+color:#243324;
+
+transition:.3s;
+
 }
+
+
+
+nav a:hover{
+
+color:#C77745;
+
+}
+
+
+
+
 
 
 
@@ -79,54 +147,102 @@ letter-spacing:2px;
 
 .hero{
 
+
 height:100vh;
 
+
 background:
+
+
 linear-gradient(
+
 90deg,
-rgba(247,240,229,.8),
-rgba(247,240,229,.15)
+
+rgba(247,240,228,.95),
+
+rgba(247,240,228,.55),
+
+rgba(247,240,228,.05)
+
 ),
+
+
 url("assets/hero.png");
 
 
+
 background-size:cover;
+
 background-position:center;
 
+
+
 display:flex;
+
 align-items:center;
 
-padding:80px;
+
+padding:0 8%;
+
 
 }
 
 
+
+.hero-copy{
+
+max-width:650px;
+
+}
+
+
+
+.label,
 .hero p{
+
+font-size:12px;
 
 letter-spacing:5px;
 
+color:#C77745;
+
+text-transform:uppercase;
+
+font-weight:bold;
+
 }
+
+
+
 
 
 .hero h1{
 
 font-family:Georgia,serif;
 
-font-size:90px;
+font-size:clamp(55px,8vw,110px);
+
+line-height:.9;
+
 font-weight:400;
 
-line-height:.95;
+margin:35px 0;
 
-margin:30px 0;
+
+color:#1F3A27;
 
 }
+
+
 
 
 .hero h3{
 
-font-weight:400;
+font-size:24px;
 
-font-size:22px;
+font-weight:300;
+
+color:#52613E;
 
 }
 
@@ -134,21 +250,45 @@ font-size:22px;
 
 
 
-/* STORY */
+
+
+
+
+/* STORY + SIZE */
 
 
 .story,
 .size{
 
+
 display:grid;
 
 grid-template-columns:1fr 1fr;
 
-gap:80px;
+
+gap:90px;
+
 
 align-items:center;
 
-padding:150px 10%;
+
+padding:11% 10%;
+
+}
+
+
+
+.story{
+
+background:#F7F0E4;
+
+}
+
+
+
+.size{
+
+background:#EFE2CB;
 
 }
 
@@ -159,27 +299,46 @@ padding:150px 10%;
 
 width:100%;
 
+border-radius:18px;
+
+box-shadow:
+
+0 25px 60px rgba(63,50,35,.18);
+
 }
+
 
 
 h2{
 
 font-family:Georgia,serif;
 
-font-size:60px;
+
+font-size:clamp(42px,5vw,72px);
+
 
 font-weight:400;
 
+
+line-height:1;
+
+
+color:#243324;
+
+margin-top:25px;
+
 }
+
 
 
 p{
 
-font-size:19px;
+font-size:18px;
 
-line-height:1.8;
+line-height:1.9;
 
-margin-top:40px;
+
+color:#52613E;
 
 }
 
@@ -187,16 +346,33 @@ margin-top:40px;
 
 
 
-/* SIZE */
+
+
+
+/* SIZE NUMBERS */
 
 
 .stats{
 
 display:flex;
 
-gap:60px;
+gap:70px;
 
-margin-top:50px;
+margin-top:60px;
+
+}
+
+
+
+.stats div{
+
+
+background:white;
+
+padding:35px 45px;
+
+border-radius:100px;
+
 
 }
 
@@ -204,13 +380,34 @@ margin-top:50px;
 
 .stats h1{
 
+
 font-family:Georgia;
 
 font-size:60px;
 
 font-weight:400;
 
+
+color:#C77745;
+
 }
+
+
+
+.stats span{
+
+font-size:12px;
+
+letter-spacing:2px;
+
+text-transform:uppercase;
+
+color:#243324;
+
+}
+
+
+
 
 
 
@@ -221,31 +418,36 @@ font-weight:400;
 
 .statement{
 
-height:80vh;
+
+height:90vh;
+
 
 background:
 
+
 linear-gradient(
-rgba(0,0,0,.25),
-rgba(0,0,0,.25)
+
+rgba(31,58,39,.2),
+
+rgba(31,58,39,.45)
+
 ),
 
 url("assets/palm01.png");
 
 
+
 background-size:cover;
+
+background-position:center;
+
 
 
 display:flex;
 
-align-items:center;
-
 justify-content:center;
 
-
-color:white;
-
-text-align:center;
+align-items:center;
 
 
 }
@@ -254,13 +456,22 @@ text-align:center;
 
 .statement h1{
 
+
 font-family:Georgia;
 
-font-size:80px;
+font-size:clamp(50px,8vw,105px);
+
 
 font-weight:400;
 
+color:#FFF8EC;
+
+
+text-align:center;
+
 }
+
+
 
 
 
@@ -272,7 +483,19 @@ font-weight:400;
 
 .care{
 
-padding:150px 10%;
+
+background:#243324;
+
+
+padding:12% 10%;
+
+}
+
+
+
+.care h2{
+
+color:#FFF8EC;
 
 }
 
@@ -280,7 +503,8 @@ padding:150px 10%;
 
 .care-grid{
 
-margin-top:80px;
+
+margin-top:90px;
 
 
 display:grid;
@@ -289,16 +513,21 @@ grid-template-columns:repeat(4,1fr);
 
 gap:40px;
 
-
 }
 
 
 
 .care-grid div{
 
-border-top:1px solid #222;
 
-padding-top:30px;
+background:#FFF8EC;
+
+
+padding:40px;
+
+
+border-radius:25px;
+
 
 }
 
@@ -306,9 +535,13 @@ padding-top:30px;
 
 .care span{
 
+
 font-family:Georgia;
 
-font-size:30px;
+font-size:34px;
+
+
+color:#C77745;
 
 }
 
@@ -316,26 +549,60 @@ font-size:30px;
 
 .care h3{
 
-margin:30px 0;
 
-font-size:26px;
+font-family:Georgia;
+
+font-size:30px;
+
+
+font-weight:400;
+
+
+margin:25px 0;
+
+
+color:#243324;
+
+}
+
+
+
+.care p{
+
+
+color:#52613E;
 
 }
 
 
 
 
+
+
+
+
+/* FOOTER */
 
 
 footer{
 
-padding:50px;
+
+background:#1F3A27;
+
+
+color:#F7F0E4;
+
+
+padding:45px;
+
 
 text-align:center;
 
-letter-spacing:4px;
 
-font-size:12px;
+letter-spacing:5px;
+
+
+font-size:11px;
 
 }
 
@@ -343,7 +610,12 @@ font-size:12px;
 
 
 
-@media(max-width:800px){
+
+
+/* MOBILE */
+
+
+@media(max-width:850px){
 
 
 header{
@@ -353,6 +625,7 @@ padding:25px;
 }
 
 
+
 nav{
 
 display:none;
@@ -360,22 +633,30 @@ display:none;
 }
 
 
-.hero{
-
-padding:30px;
-
-}
-
-
-.hero h1{
-
-font-size:55px;
-
-}
-
-
 .story,
-.size,
+.size{
+
+
+grid-template-columns:1fr;
+
+
+padding:120px 30px;
+
+
+}
+
+
+
+.care{
+
+
+padding:100px 30px;
+
+
+}
+
+
+
 .care-grid{
 
 grid-template-columns:1fr;
@@ -383,21 +664,12 @@ grid-template-columns:1fr;
 }
 
 
-.story,
-.size,
-.care{
+.stats{
 
-padding:90px 30px;
+flex-direction:column;
 
 }
 
-
-h2,
-.statement h1{
-
-font-size:45px;
-
-}
 
 
 }
