@@ -1,0 +1,302 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#F4EFE6;
+    color:#22251F;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+/* HEADER */
+
+header{
+    position:fixed;
+    top:0;
+    width:100%;
+    padding:30px 60px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    z-index:10;
+}
+
+.logo{
+    font-family:Georgia, serif;
+    font-size:24px;
+    letter-spacing:5px;
+}
+
+nav a{
+    color:#22251F;
+    text-decoration:none;
+    margin-left:35px;
+    font-size:13px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+
+
+/* HERO */
+
+.hero{
+    height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(244,239,230,.25),
+        rgba(244,239,230,.55)
+    ),
+    url("assets/hero.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    align-items:center;
+
+    padding:80px;
+}
+
+
+.hero-text p{
+    letter-spacing:4px;
+    text-transform:uppercase;
+    margin-bottom:25px;
+}
+
+
+.hero h1{
+    font-family:Georgia, serif;
+    font-size:95px;
+    line-height:.95;
+    font-weight:400;
+
+    max-width:800px;
+}
+
+
+.hero span{
+    display:block;
+    margin-top:35px;
+
+    font-size:18px;
+    max-width:380px;
+    line-height:1.6;
+}
+
+
+
+/* STORY */
+
+.story{
+    padding:160px 15%;
+}
+
+
+.story h2{
+    font-family:Georgia, serif;
+    font-size:60px;
+    font-weight:400;
+
+    margin-bottom:50px;
+}
+
+
+.story p{
+    font-size:22px;
+    line-height:1.8;
+
+    max-width:850px;
+}
+
+
+
+/* PRODUCT */
+
+.product{
+    height:90vh;
+
+    background:#283225;
+    color:#F4EFE6;
+
+    display:flex;
+    align-items:center;
+
+    padding:15%;
+}
+
+
+.product h2{
+    font-family:Georgia, serif;
+    font-size:80px;
+    font-weight:400;
+}
+
+
+.product p{
+    margin-top:40px;
+    font-size:22px;
+    line-height:1.7;
+
+    max-width:500px;
+}
+
+
+
+/* CAMPAIGN */
+
+.campaign{
+
+    height:100vh;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,.2),
+        rgba(0,0,0,.35)
+    ),
+    url("assets/palm01.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    color:white;
+}
+
+
+.campaign h1{
+
+    font-family:Georgia, serif;
+    font-size:90px;
+    font-weight:400;
+
+}
+
+
+
+/* CARE */
+
+.care{
+
+    padding:140px 10%;
+
+}
+
+
+.care h2{
+
+    font-family:Georgia, serif;
+    font-size:60px;
+    font-weight:400;
+
+    margin-bottom:70px;
+
+}
+
+
+.care-grid{
+
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:40px;
+
+}
+
+
+.care-grid div{
+
+    border-top:1px solid #222;
+
+    padding-top:30px;
+
+}
+
+
+.care-grid h3{
+
+    margin:20px 0;
+
+    font-size:24px;
+
+}
+
+
+.care-grid p{
+
+    line-height:1.7;
+
+}
+
+
+
+/* FOOTER */
+
+footer{
+
+    padding:40px;
+
+    text-align:center;
+
+    font-size:12px;
+
+    letter-spacing:3px;
+
+}
+
+
+
+/* MOBILE */
+
+@media(max-width:800px){
+
+header{
+    padding:25px;
+}
+
+nav{
+    display:none;
+}
+
+.hero{
+    padding:30px;
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.story,
+.product,
+.care{
+    padding:100px 30px;
+}
+
+.story h2,
+.product h2,
+.care h2,
+.campaign h1{
+    font-size:45px;
+}
+
+.care-grid{
+    grid-template-columns:1fr;
+}
+
+}
